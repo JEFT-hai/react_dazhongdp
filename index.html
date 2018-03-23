@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	function parseURL(url){  
+	    //解析协议  
+	    var protocal = url.substring(0, url.indexOf(':'));  
+	    //alert('protocal:' + protocal);  
+	      
+	    //解析域名和端口  
+	    var tmp = url.substr(url.indexOf('//') + 2);  
+	      
+	    var domain = tmp.substr(0, tmp.indexOf("/"));  
+	    //alert('domain:' + domain);  
+	      
+	    var domainName,port;  
+	    var idx = domain.indexOf(":");  
+	      
+	    if(idx>0){  
+	        domainName = domain.substr(0,idx);  
+	        port = domain.substr(idx + 1);  
+	    } else{  
+	        domainName = domain;  
+	    }  
+	  
+	    //alert('domainName:' + domainName + ',' + port);  
+	      
+	    //解析web context  
+	    var tmp2 = tmp.substr(tmp.indexOf("/") + 1);      
+	    var webContext = tmp2.substr(0,tmp2.indexOf('/'));  
+	    //alert('webContext:' +webContext);  
+	      
+	    //解析URI  
+	    var uri = tmp2.substr(tmp2.indexOf('/'));  
+	    //alert('uri:' + uri);  
+	      
+	    return {  
+	        protocal: protocal,  
+	        domainName:domainName,  
+	        port: port,  
+	        webContext: webContext,  
+	        uri: uri  
+	    }  
+	}  
+
+	var s = parseURL('http://i0.sinaimg.cn:8080/blog/register.jsp?type=a&name=test1234')
+
+	console.log(s)
+	  
+	function testParseUrl(){  
+	    var url = "http://ppp.com:8090/mximprove/mxt/scripts/views/MainViewController.js";  
+	    var urlObj = parseURL(url);  
+	    console.log(urlObj)
+	    // document.writeln('<br>' + urlObj.protocal);  
+	    // document.writeln('<br>' + urlObj.domainName);  
+	    // document.writeln('<br>' + urlObj.port);  
+	    // document.writeln('<br>' + urlObj.webContext);  
+	    // document.writeln('<br>' + urlObj.uri);          
+	}     
+	      
+	      
+	// testParseUrl();  
+	  
+	// /---------------------------------------------------------------------------------------------------------------- / 
+	  
+	//使用正则表达式对URL进行解析  
+	function parseUrl(url){       
+	    var reg = /^(\w+):\/\/([^\/:]*)(?::(\d+))?\/(.*)/  
+	    reg.exec(url);  
+	      
+	    alert(RegExp.$1 + ',' + RegExp.$2 + ',' + RegExp.$3 + ',' + RegExp.$4+ ',' + RegExp.$5);  
+	}  
+	  
+	  
+	function parseUrl2(url){          
+	    var reg = /^(\w+):\/\/([^\/:]*)(?::(\d+))?\/([^\/]*)(\/.*)/  
+	    reg.exec(url);  
+	      
+	    console.log(RegExp.$1 + ',' + RegExp.$2 + ',' + RegExp.$3 + ',' + RegExp.$4+ ',' + RegExp.$5);  
+	}  
+	  
+	  
+	function testParseUrl(){  
+	    var url = "http://ppp.com:8090/mximprove/mxt/scripts/views/MainViewController.js";  
+	  
+	    parseUrl2(url);  
+	      
+	    var url2 = "http://ppp.com/mximprove?type=0";  
+	      
+	    parseUrl2(url2);  
+	  
+	}  
+	  
+	// testParseUrl();  
+	console.log(parseUrl('http://i0.sinaimg.cn:8080/blog/register.jsp?type=a&name=test1234'))
+</script>
+</html>

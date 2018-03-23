@@ -1,0 +1,23 @@
+.downApp{
+	height: 50px;
+}
+.down_Inner{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+    box-shadow: 0 9px 15px 1px #000;
+
+}
+.down_btn{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin:5px 15px;
+	border-radius: 5px;
+	background: #f63;
+	color: #fff;
+}

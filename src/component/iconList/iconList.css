@@ -1,0 +1,30 @@
+.icon_list{
+	width:100%;
+	padding:0 10px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #333;
+	font-size: 13px;
+	overflow: hidden;
+}
+.icon_item{
+	padding:13px 0 0;
+	height: 87px;
+	width:20%;
+	float: left;
+	text-decoration: none;
+	color: #333;
+	box-sizing: border-box;
+}
+.icon_item img{
+	width:44px;
+	height: 44px;
+	display: block;
+	margin:0 auto 2px;
+	border:none;
+}
+.icon_item span{
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}

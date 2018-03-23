@@ -1,0 +1,46 @@
+.downLoad{
+	height:120px;
+	width:100%;
+	background: url(../img/top.png) no-repeat 50%;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.downLoad .title{
+	display: flex;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 24px 0 14px;
+	justify-content: center;
+}
+.downLoad .title .icon{
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	background: url(../img/icon.png) no-repeat;
+	background-size: 100%;
+}
+.downLoad .ButtonList{
+	display: flex;
+	justify-content: center;
+}
+.downLoad .ButtonList button{
+	width: 126px;
+	height: 40px;
+	font-size: 14px;
+	border:1px solid #f63;
+	border-radius: 2px;
+	padding:0;
+	margin:0;
+	box-sizing: content-box;
+}
+.downLoad .ButtonList .open{
+	background-color: #fff;
+	margin-right: 15px;
+	color: #f63;
+}
+.downLoad .ButtonList .down{
+	background-color: #f63;
+	color: #fff;
+}

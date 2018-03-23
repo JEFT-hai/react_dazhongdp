@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Hiragino Sans GB,Arial,Helvetica,\\5B8B\4F53,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a,ins{
+	text-decoration: none;
+	color: #333;
+}
+li{
+	list-style: none;
+}
+ul,li,p,figure,h3{
+	padding:0;
+	margin:0;
+}
+.right{
+	float: right;
+}
+.border-1px{
+	background: url(./img/repeat-x.png) 0 bottom repeat-x;
+	background-size: auto 10px;
+}
+.cover{
+	width: 100%;
+	height: 100%;
+}
+.deal{
+	overflow: hidden;
+	background: #f0f0f0;
+}
+
+.line2{
+	padding-right: 4px;
+	overflow: hidden;
+}
+.bg_line{
+	height: 10px;
+	background: #f0f0f0;
+}
+.line2_item{
+	padding:4px 0 4px 4px;
+	height: 78px;
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.line2_item_link{
+	display: block;
+	position: relative;
+	padding-left: 10px;
+	height: 100%;
+	background-color: #44d0cd;
+}
+.line2_item1 .line2_item_link{
+	background-color: #ffa383;
+}
+.line2_item1 .line2_item_link .adSubTitle{
+	background-color: #f97e54;
+}
+.line2_item_link p{
+	color: #fff;
+}
+.line2_item_link .adTitle{
+	padding:12px 0 2px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.line2_item_link .adSubTitle{
+	font-size: 12px;
+	width: 75px;
+	border-radius: 12px;
+	padding:2px;
+	text-align: center;
+	background-color: #22bab7;
+}
+.line2_item_link img{
+	position: absolute;
+	right: 6px;
+	top:7px;
+	width: 60px;
+	height: 60px;
+}
+
+.prefer_inner{
+	padding:7px 6px 10px;
+}
+.prefer_head{
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	padding:0 3px;
+}
+.prefer_head_title{
+	display: block;
+	float: left;
+	height: 30px;
+	width: 75px;
+	background: url(img/sprite2.png) 0 -29px no-repeat;
+	background-size: 200px;
+}
+.prefer_head_more{
+	float: right;
+	color: #999;
+	font-size: 14px;
+}
+.more{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border:2px solid #bbb;
+	border-bottom: none;
+	border-left: none;
+	transform: rotate(45deg);
+}
+.prefer_content{
+	display: flex;
+	width: 100%;
+	height: 120px;
+	padding-bottom: 5px;
+}
+.prefer_content_item{
+	flex: 1;
+	padding: 0 4px;
+	box-sizing: border-box
+}
+.prefer_content_item figure{
+	height: 83.5px;
+}
+.prefer_content_item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+}
+.prefer_content_item figcaption{
+	font-size: 14px;
+	color: #333;
+	padding-top: 3px;
+
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.prefer_content_item .price{
+	padding-top: 5px;
+}
+.prefer_content_item .price .curPrice{
+	color: #f63;
+	font-size: 20px;
+}
+.prefer_content_item .price .oldPrice{
+	font-size: 12px;
+	color: #999;
+}
+.prefer_content_item .price .curPrice i{
+	font-style: normal;
+	font-size: 14px;
+}
+
+
+/*deal*/
+.Img_slider{
+	position: relative;
+}
+.Info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding:10px 15px;
+	background: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.6));
+
+}
+.Info .dealTitle{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+.Info .dealContent{
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+}
+
+/*cost*/
+.costList,.shop{
+	padding-left: 15px;
+	background-color: #fff;
+}
+.costList{
+	margin-bottom: 20px;
+}
+.cost{
+	display: flex;
+	height: 50px;
+	line-height: 50px;
+	background: url(./img/repeat-x.png) 0 bottom repeat-x;
+	background-size: auto 10px;
+}
+.cost .price{
+	color: #f63;
+	font-size: 21px;
+	font-style: normal;
+	margin-right: 3px;
+}
+.cost ins{
+	font-size: 30px;
+	color: #f63;
+	margin-right: 13px;
+}
+.cost del{
+	color: #999;
+	flex: 1;
+	margin-bottom: 10px;
+	line-height: 57px;
+	font-size: 13px;
+}
+.cost .buy{
+	margin-right: 10px;
+	height: 34px;
+	width: 105px;
+	border-radius: 5px;
+	background-color: #f63;
+	text-align: center;
+	color: #fff;
+	line-height: 34px;
+	margin-top: 8px;
+}
+.advantage{
+	display: flex;
+	height: 45px;
+	line-height: 45px;
+	font-size: 12px;
+	color: #333;
+}
+.advantage li{
+	flex: 1;
+}
+.advantage li i{
+	background-image: url(./img/iconList.png);
+	background-size: 25px auto;
+	background-position: 0 -275px;
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	vertical-align: sub;
+	margin-right: 5px;
+}
+.advantage li i.time{
+	background-position: 0 -296px;
+}
+
+/*shop*/
+.shop{
+	margin-bottom: 10px;
+}
+.headTitle{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #999;
+}
+
+
+.shopList{
+	display: flex;
+	width: 100%;
+	padding:15px 0;
+	overflow: hidden;
+}
+.shopList_right{
+	width:70px;
+	text-align: center;
+}
+.shopList_left{
+	flex: 1;
+	background: url(./img/repeat-right.png) right repeat-y;
+	background-size: 1px auto;
+}
+.shopList_left h3{
+	color: #878787;
+}
+.shopList_left p{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.shopList_left p span:last-child{
+	font-size: 12px;
+	color: #666;
+	display: inline-block;
+	padding-right: 10px;
+}
+.shopList_right i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(./img/mobile.png) no-repeat;
+	background-size: cover;
+	margin-top: 10px;
+}
+.address i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(./img/i.png) no-repeat;
+	background-position: 0 -58px;
+	background-size: 14px;
+	vertical-align: sub;
+	margin-right: 3px;
+}
+.address{
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #333;
+}
+
+/*deal*/
+.dealDetail{
+	padding-left: 15px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.deal_content li{
+ 	display: flex;
+ 	justify-content: space-between;
+}
+.headTitle i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(./img/i.png) no-repeat;
+	background-size: cover;
+	vertical-align: sub;
+}
+.dealDetail .headTitle i{
+	background-position: 0 -38px;
+	margin-left: 4px;
+}
+.dealTitle{
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+}
+.deal_content li,.allPrice{
+	height: 33px;
+	line-height: 33px;
+	color: #333;
+	font-size: 14px;
+}
+
+.dealList{
+	padding-bottom: 10px;
+}
+
+.allPrice .allPriceRight span{
+	text-decoration: line-through;
+	color: #999;
+}
+.allPrice .allPriceRight span:last-child{
+	display: inline-block;
+	padding-right: 10px;
+	width: 48px;
+	text-align: right;
+}
+.count_price span{
+	display: inline-block;
+	width: 48px;
+	text-align: right;
+}
+.count_price span:last-child{
+	padding-right: 10px;
+}
+
+.dealPrice{
+	height: 33px;
+	line-height: 33px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.dealPriceRight{
+	color: #f63;
+}
+
+.dealPriceRight span{
+	display: inline-block;
+	width: 48px;
+	text-align: right;
+	font-size: 14px;
+}
+.dealPriceRight span:last-child{
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+.deal_more{
+	height: 45px;
+	line-height: 45px;
+	background: #fff;
+	font-size: 14px;
+	color: #333;
+}
+.deal_more span{
+	color: #999;
+}
+
+.deal_more .more{
+	float: right;
+	margin-top: 18px;
+	margin-right: 15px;
+	border-color: #ccc;
+}
+
+/*shouldKnow*/
+.buyKnow{
+	padding-left: 15px;
+	background: #fff;
+	padding-bottom: 10px;
+}
+.knowList li{
+	background: url(./img/repeat-x.png) 0 bottom repeat-x;
+	background-size: auto 10px;
+	padding:5px 0 10px;
+}
+.knowList li .title{
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #999;
+}
+.knowList li .listItem{
+	height: 20px;
+	line-height: 20px;
+	margin:7px 0;
+	font-size: 14px;
+	color: #666;
+	position: relative;
+}
+.knowList li .listItem:before{
+	position: absolute;
+	content: '';
+	width:3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #666;
+	left: -10px;
+	top:10px;
+
+}
+
+.buy_now{
+	height: 40px;
+	margin:10px;
+	background: #f63;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+/*other_deal*/
+
+.other_deal{
+	background: #fff;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+.other_deal h3{
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
+}
+.other_deal .price{
+	height: 44px;
+	line-height: 44px;
+}
+.price ins{
+	font-size: 20px;
+	color: #f63;
+	margin-right: 5px;
+}
+.price del{
+	color: #666;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.price span{
+	color: #333;
+	font-size: 14px;
+}
+
+/*similar*/
+
+.similar{
+	padding-left: 15px;
+	background-color: #fff;
+}
+.similar h3{
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
+}
+.similar_list li{
+	display: flex;
+	margin-top: 10px;
+}
+.similar_list li figure{
+	padding:0 10px 10px 5px;
+}
+.similar_list li figure img{
+	width: 94px;
+	height: 58px;
+}
+
+.similar_list li .similar_item_Info{
+	flex: 1;
+}
+.Info_title{
+	height: 30px;
+	line-height: 30px;
+	color: #323232;
+	font-size: 14px;
+}
+
+.bottom{
+	height: 500px;
+}
+

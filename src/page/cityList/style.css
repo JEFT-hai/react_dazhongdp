@@ -1,0 +1,128 @@
+.areaList{
+
+}
+.areaListTitle{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding-left: 10px;
+	color: #323232;
+	font-weight: 700;
+	background: #f2f2f2;
+	border-bottom: 1px solid #e2e2e2;
+}
+.areaList{
+	overflow: hidden;
+	font-size: 0;
+}
+.areaList a{
+	display: block;
+	margin:0 2px;
+}
+.areaList li{
+	width:33%;
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+
+	overflow: hidden;
+
+	border-right:1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.moreArea .areaList li{
+	width: 20%;
+	box-sizing: border-box;
+}
+
+
+.citySearch{
+	height: 50px;
+	padding:9px 28px;
+	background: #f0f0f0;
+	box-sizing: border-box;
+}
+.citySearch .citySearch_inner{
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	color: #999;
+}
+.citySearch_inner span{
+	display: inline-block;
+	padding-left: 15px;
+	position: relative;
+}
+.citySearch_inner span:after,.citySearch_inner span:before{
+	position: absolute;
+	content: '';
+}
+.citySearch_inner span:before{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border:1px solid #888;
+	top:50%;
+	left: 0;
+	margin-top: -8px;
+}
+.citySearch_inner span:after{
+	width: 6px;
+	height: 1px;
+	background: #888;
+	transform: rotate(45deg);
+	left: 0;
+	top:50%;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+.noPosition{
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+	color: #323232;
+}
+.cityList header{
+	background: #fff;
+}
+.cityback:after{
+	top:22px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border-color: #f63;
+}
+.typeList {
+	width:200px;
+	display: inline-block;
+}
+.typeList a{
+	display: inline-block;
+	width: 50%;
+	line-height: 28px;
+	border: 1px solid #f63;
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #f63;
+}
+.typeList a:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.typeList a:last-child{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.typeList a.on{
+	background: #f63;
+	color: #fff;
+}

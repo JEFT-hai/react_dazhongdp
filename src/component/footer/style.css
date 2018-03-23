@@ -1,0 +1,23 @@
+footer{
+	padding:15px 5px 10px;
+	text-align: center;
+	font-size: 12px;
+}
+.IndexFooter{
+	background: #f0f0f0;
+}
+.IndexFooter em{
+	padding: 0 10px;
+}
+footer a{
+	color: #adadad;
+	line-height: 28px;
+}
+footer em{
+	padding:0 12px;
+	color: #8c8c8c;
+}
+.copyright{
+	margin-top: 20px;
+	color: #adadad;
+}

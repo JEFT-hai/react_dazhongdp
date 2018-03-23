@@ -1,0 +1,14 @@
+.star_pic{
+	display: inline-block;
+	width: 86px;
+	height: 16px;
+	background: url(../../img/star_bg.png) no-repeat;
+	background-size: 100%;
+}
+.star_pic i {
+	background: url(../../img/star.png) no-repeat;
+	background-size: auto 100%;
+	display: inline-block;
+	height: 100%;
+	overflow: hidden;
+}
